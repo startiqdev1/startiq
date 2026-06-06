@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: #0b0f1a;
+    overflow-x: hidden;
+}
+
+/* 🌈 fundal animat */
+.bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #0f172a, #1e293b, #0b0f1a);
+    background-size: 300% 300%;
+    animation: move 10s infinite alternate;
+    z-index: -1;
+}
+
+@keyframes move {
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+/* 🪟 glass effect */
+.glass {
+    width: 80%;
+    margin: 20px auto;
+    padding: 25px;
+
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.glass:hover {
+    transform: scale(1.02);
+}
+
+/* header */
+header {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* 🧩 cards */
+.card {
+    background: rgba(255,255,255,0.08);
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 12px;
+}
+
+/* ⚡ Discord button */
+.discord {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 16px;
+
+    background: #5865F2;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 10px;
+
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.discord:hover {
+    background: #4752c4;
+    transform: translateY(-2px);
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.7;
+}.profile {
+    text-align: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+
+    border: 2px solid rgba(255,255,255,0.3);
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
